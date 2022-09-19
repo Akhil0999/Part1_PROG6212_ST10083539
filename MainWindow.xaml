@@ -1,0 +1,49 @@
+﻿<Window x:Class="Part1_PROG6212_ST10083539.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Part1_PROG6212_ST10083539"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" SizeToContent="Height">
+    <Grid Cursor="ArrowCD">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="TIME MANAGEMENT STUDY APPLICATION" HorizontalAlignment="Left" Margin="156,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="488" Background="#FFB707F9" FontWeight="Bold" FontStyle="Oblique" FontFamily="Sitka Heading" FontSize="24"/>
+        <Label Content=" Semester information required*" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Margin="114,68,0,0" VerticalAlignment="Top" Background="#FF3382E0"/>
+        <Label Content="Add Module information" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Margin="133,10,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF3382E0"/>
+        <Label Content="Record study Session" FontStyle="Italic" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top" Background="#FF3382E0"/>
+        <ListBox x:Name="listBox" Grid.Column="1" Background="#FFF5F07B" Height="177" VerticalAlignment="Top" Margin="0,40,0,0" Grid.Row="1"/>
+        <Button Name="btnAddModule" Content="    Add&#x0a; Module(s)" FontWeight="DemiBold" FontStyle="Italic" HorizontalAlignment="Left" Margin="309,64,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF6956E0" Height="99" Click="btnAddModule_Click"/>
+        <Button Name="btnDisplaySelfStudyHours" Content="Display module list and self study hours required per week" FontStyle="Italic" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="42,187,0,0" Grid.Row="1" VerticalAlignment="Top" Width="330" Background="#FFE0D710" Click="btnDisplaySelfStudyHours_Click"/>
+        <Button Name="btnDisplayRemainingSelfStudyHours" Content="Display module list and Self Study hours remaining" FontStyle="Italic" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="62,187,0,0" VerticalAlignment="Top" Grid.Column="1" Background="#FFE0D710" Width="307" Click="btnDisplayRemainingSelfStudyHours_Click"/>
+        <Button Name="btnRecordStudySesh" Content="  Record&#x0a;   Study&#x0a; Session(s)" FontStyle="Italic" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="302,95,0,0" VerticalAlignment="Top" Grid.Column="1" Height="82" Width="67" Background="#FF6956E0" Click="btnRecordStudySesh_Click"/>
+        <Label Content="Module name:" HorizontalAlignment="Left" Margin="51,60,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Semester Start Date:" HorizontalAlignment="Left" Margin="65,117,0,0" VerticalAlignment="Top"/>
+        <Label Content="Module code:" HorizontalAlignment="Left" Margin="51,87,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Available credits:" HorizontalAlignment="Left" Margin="51,114,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Weekly hours:" HorizontalAlignment="Left" Margin="51,142,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Total number of&#x0a; weeks in Semester:" HorizontalAlignment="Left" Margin="69,164,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="edtMName" HorizontalAlignment="Left" Margin="184,64,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="edtMCode" HorizontalAlignment="Left" Margin="184,91,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="edtMCredits" HorizontalAlignment="Left" Margin="184,118,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="edtMHoursPW" HorizontalAlignment="Left" Margin="184,145,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Module name:" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Center" Grid.Column="1"/>
+        <Label Content="Hours Studied:" HorizontalAlignment="Left" Margin="60,153,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Date:" HorizontalAlignment="Left" Margin="60,124,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="edtSearchModule" HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="177,99,0,0"/>
+        <TextBox x:Name="edtHoursStudied" HorizontalAlignment="Left" Margin="177,157,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="edtTotalWeeksInSemes" HorizontalAlignment="Left" Margin="202,176,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="StudyDate" Grid.Column="1" HorizontalAlignment="Left" Margin="177,126,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="StartDate" HorizontalAlignment="Left" Margin="202,119,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="              DISPLAY" Grid.Column="1" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Width="400" Height="36" Grid.RowSpan="2" Background="#FFF3E022" FontFamily="NSimSun" FontSize="22"/>
+
+
+    </Grid>
+</Window>

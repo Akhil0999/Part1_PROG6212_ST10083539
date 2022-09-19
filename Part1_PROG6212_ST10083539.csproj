@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="TimeManagementClassLibrary">
+      <HintPath>..\TimeManagementClassLibrary\bin\Debug\net5.0\ref\TimeManagementClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
